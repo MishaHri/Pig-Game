@@ -11,6 +11,8 @@ const score1El = document.getElementById('score--1');
 const diceEl = document.querySelector('.dice');
 const current0El = document.getElementById('current--0');
 const current1El = document.getElementById('current--1');
+const player0El = document.querySelector('.player--0');
+const player1El = document.querySelector('.player--1');
 
 //select the buttons
 
@@ -50,7 +52,9 @@ btnRoll.addEventListener('click', function () {
     //swich to next player
     currentScore =currentScore + dice;
     document.getElementById(`current--${activePlayer}`).textContent = 0;
-    activePlayer = activePlayer === 0 ? 1:0;
     currentScore = 0;
+    activePlayer = activePlayer === 0 ? 1:0;
+    player0El.classList.toggle('player--active');
+    player1El.classList.toggle('player--active');
     }
 });
