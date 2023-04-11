@@ -1,4 +1,6 @@
 Pig-Game
+
+
  What this app does :
 It is a game played between 2 players. You score points by rolling a dice, and the first player who gets to 20 points wins the game.
 
